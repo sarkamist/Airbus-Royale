@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Airbus Royale</title>
+		<meta charset="UTF-8" />
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="src/styles.css" />
+	</head>
+
+	<body>
+		<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+			<span class="navbar-brand title-font"><i class="fas fa-crown"></i> Airbus Royale</span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="nav navbar-nav mr-auto" role="tablist">
+					<li role="presentation">
+						<a id="home-tab" class="nav-link active" href="#home" data-height="true" aria-controls="home" aria-selected="true" role="tab"> <i class="fas fa-home"></i> Home </a>
+					</li>
+					<li class="nav-item dropdown">
+						<a id="tests-dropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-play"></i> Play now
+						</a>
+						<div class="dropdown-menu" aria-labelledby="tests-dropdown">
+							<a id="airbus320-tab" class="dropdown-item" href="#airbus320" data-height="true" aria-controls="airbus320" aria-selected="true" role="tab">
+								<i class="fas fa-plane"></i> Airbus 320
+							</a>
+							<a id="airbus321-tab" class="dropdown-item" href="#airbus321" data-height="true" aria-controls="airbus321" aria-selected="false" role="tab">
+								<i class="fas fa-plane"></i> Airbus 321
+							</a>
+						</div>
+					</li>
+					<li role="presentation">
+						<a id="about-tab" class="nav-link" href="#about" data-height="true" aria-controls="about" aria-selected="false" role="tab"> <i class="fas fa-info-circle"></i> About us </a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane fade show active" aria-labelledby="home-tab" id="home">
+				<div class="container mt-2">
+					<div class="jumbotron">
+						<h1 class="display-4">Welcome!</h1>
+						<p class="lead">
+							<span class="title-font">Airbus Royale</span> is a brand new battle royale game featuring fast-paced combat, full packed with crazy action and lots of fun for you and your friends.
+							See what both players and the critics have to say about us:
+						</p>
+						<div class="d-flex flex-row flex-wrap justify-content-center">
+							<div class="card text-center m-1">
+								<div class="card-body">
+									<blockquote class="blockquote mb-0">
+										<h5 class="card-title">
+											<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</h5>
+										<p class="card-text">I've beheaded myself from so much fun!</p>
+										<footer class="blockquote-footer align-middle">Nerd Strakka from <cite title="Source Title">Metacitric</cite></footer>
+									</blockquote>
+								</div>
+							</div>
+							<div class="card text-center m-1">
+								<div class="card-body">
+									<blockquote class="blockquote mb-0">
+										<h5 class="card-title">
+											<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i>
+										</h5>
+										<p class="card-text">Enjoyed every bit of it!</p>
+										<footer class="blockquote-footer align-middle">Audience Score on <cite title="Source Title">Rotten Potatoes</cite></footer>
+									</blockquote>
+								</div>
+							</div>
+							<div class="card text-center m-1">
+								<div class="card-body">
+									<blockquote class="blockquote mb-0">
+										<h5 class="card-title">
+											<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+										</h5>
+										<p class="card-text">A solid 5/7</p>
+										<footer class="blockquote-footer align-middle">George Lawgoes from <cite title="Source Title">YGN</cite></footer>
+									</blockquote>
+								</div>
+							</div>
+							<div class="card text-center m-1">
+								<div class="card-body">
+									<blockquote class="blockquote mb-0">
+										<h5 class="card-title">
+											<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+											<i class="fas fa-star-half-alt"></i>
+										</h5>
+										<p class="card-text">Apex Legends gonna have a hard time</p>
+										<footer class="blockquote-footer align-middle">Geraldo Ribas from <cite title="Source Title">Cotacu</cite></footer>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<hr class="my-4" />
+						<p class="text-center">Want to play right now? Just click one of the buttons and join the carnage!</p>
+						<div class="d-flex flex-row flex-wrap justify-content-center">
+							<a id="home-airbus320-button" class="btn btn-dark btn-lg m-1" href="#airbus320-tab" role="button"> <i class="fas fa-plane"></i> Airbus 320 </a>
+							<a id="home-airbus321-button" class="btn btn-dark btn-lg m-1" href="#airbus321-tab" role="button"> <i class="fas fa-plane"></i> Airbus 321 </a>
+							<a id="home-disclaimer-button" class="btn btn-dark btn-lg m-1" href="#about-tab" role="button"> <i class="fas fa-info-circle"></i> Learn more </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" aria-labelledby="airbus320-tab" id="airbus320">
+				<div class="container mt-2">
+					<div class="pb-2 mt-4 mb-2 border-bottom">
+						Reach a validated score of 100% to win:
+						<br>- Drag and drop items onto their corresponding layout slots, newly dropped items begin with a quantity of 1. When subtracting a quantity below 1, the item is deleted and the slot freed.
+						<br>- Use your mouse <b><i>left click (add)</i></b> or <b><i>right click (subtract)</i></b> to manipulate slot quantities by 1. Pressing <b><i>CTRL key</i></b> changes the value added or subtracted to 5.
+						<br>- Press <b><i>Validate</i></b> button anytime to check your current score and highlight errors.  
+						<br>- You can restart at anytime by pressing the <b><i>Restart</i></b> button.
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card bg-light mb-3">
+								<div class="card-header unselectable">Items</div>
+								<div id="airbus320-inventory" class="card-body d-flex flex-row flex-wrap justify-content-center"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card bg-light mb-3">
+								<div class="card-header unselectable">Layout</div>
+								<div id="airbus320-layout" class="card-body">
+									<div class="progress"><div id="airbus320-progress" class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div></div>
+									<div class="text-center mt-2">
+										<a id="airbus320-validate-button" class="btn btn-dark" href="#" role="button"> <i class="far fa-check-square"></i> Validate </a>
+										<a id="airbus320-restart-button" class="btn btn-dark" href="#" role="button"> <i class="fas fa-sync-alt"></i> Restart </a>
+									</div>
+									<div class="d-flex flex-row justify-content-center mt-4">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="SBE" data-req-quantity="4"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PLV" data-req-quantity="5"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ILV" data-req-quantity="10"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="O2" data-req-quantity="2"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="O2" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ILV" data-req-quantity="8"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="2"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="DEMO" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FAK" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ELT/PLB" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MEG" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FAK" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FRG" data-req-quantity="1"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot empty" data-toggle="slot" data-req-item="FL*" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="4"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="2"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="AXE" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FRG" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled "></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PLV" data-req-quantity="5"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ELT/PLB" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MEG" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="DEMO" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ISB" data-req-quantity="18"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="EMK" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" aria-labelledby="airbus321-tab" id="airbus321">
+				<div class="container mt-2">
+					<div class="pb-2 mt-4 mb-2 border-bottom">
+						 Reach a validated score of 100% to win:
+						<br>- Drag and drop items onto their corresponding layout slots, newly dropped items begin with a quantity of 1. When subtracting a quantity below 1, the item is deleted and the slot freed.
+						<br>- Use your mouse <b><i>left click (add)</i></b> or <b><i>right click (subtract)</i></b> to manipulate slot quantities by 1. Pressing <b><i>CTRL key</i></b> changes the value added or subtracted to 5.
+						<br>- Press <b><i>Validate</i></b> button anytime to check your current score and highlight errors.  
+						<br>- You can restart at anytime by pressing the <b><i>Restart</i></b> button.
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card bg-light mb-3">
+								<div class="card-header unselectable">
+									Items
+								</div>
+								<div id="airbus321-inventory" class="card-body d-flex flex-row flex-wrap justify-content-center"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card bg-light mb-3">
+								<div class="card-header unselectable">Layout</div>
+								<div id="airbus321-layout" class="card-body">
+									<div class="progress">
+										<div id="airbus321-progress" class="progress-bar bg-success" role="progressbar" aria-valuenow="0"
+										 aria-valuemin="0" aria-valuemax="0"></div>
+									</div>
+									<div class="text-center mt-2">
+										<a id="airbus321-validate-button" class="btn btn-dark" href="#" role="button"> <i class="far fa-check-square"></i> Validate </a>
+										<a id="airbus321-restart-button" class="btn btn-dark" href="#" role="button"> <i class="fas fa-sync-alt"></i> Restart </a>
+									</div>
+									<div class="d-flex flex-row justify-content-center mt-4">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="DEMO" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="DEMO" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="O2" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ILV" data-req-quantity="8"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="2"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="DEMO" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MEG" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FAK" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FRG" data-req-quantity="1"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot empty" data-toggle="slot" data-req-item="FL*" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="2"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="4"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot empty" data-toggle="slot" data-req-item="AXE" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FRG" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MEG" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ILV" data-req-quantity="14"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PLV" data-req-quantity="7"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="SBE" data-req-quantity="6"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FAK" data-req-quantity="2"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ISB" data-req-quantity="22"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PLV" data-req-quantity="5"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="ELT/PLB" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CB" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FRG" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="DEMO" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="EMK" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="CLV" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="MRT" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="O2" data-req-quantity="3"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="BCF" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="PBE" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+									<div class="d-flex flex-row justify-content-center">
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot empty" data-toggle="slot" data-req-item="FL" data-req-quantity="1"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+										<div class="slot disabled"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" aria-labelledby="about-tab" id="about">
+				<div class="container mt-2">
+					<div class="pb-2 mt-4 mb-2 border-bottom">
+						<span
+							>We are not responsible for, and expressly disclaim all liability for: damages of any kind arising out of use, reference to, or reliance on any information contained within the
+							site. While the information contained within the site is periodically updated, no guarantee is given that the information provided in this Web site is correct, complete, and
+							up-to-date.
+							<br>Made by Alejandro Belmonte (</span
+						>
+					</div>
+					<div class="alert alert-info alert-dismissible fade show" role="alert">
+						<span>No foils were used trying to become the best fencer while making this webpage.</span>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="alert alert-info alert-dismissible fade show" role="alert">
+						<span>M&B Bannerlord may never come out. #SaveTaleWorlds</span>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="alert alert-info alert-dismissible fade show" role="alert">
+						<span>If Ned would not been executed outright he could have been used to negotiate Robb's surrender, preventing further bloodshed. Fucking Joffrey.</span>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="alert alert-info alert-dismissible fade show" role="alert">
+						<span>Geralt of Rivia is a Gary Stu. Dealing with lingering injuries and long resting times does not change anything.</span>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="alert alert-info alert-dismissible fade show" role="alert">
+						<span>Please, for further information refer to <a class="alert-link" href="https://www.youtube.com/watch?v=K2BFuXamjoM">this video</a>.</span>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="alert alert-info alert-dismissible fade show" role="alert">
+						<span>Subscribe to <a class="alert-link" href="https://www.youtube.com/channel/UCq7rlPn0quM93CJxY3FW0wA/videos">our YouTube channel</a> for the latest news.</span>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap.native@2.0.15/dist/bootstrap-native-v4.min.js"></script>
+		<script src="src/DragDropTouch.js"></script>
+		<script src="src/index.js"></script>
+	</body>
+</html>
